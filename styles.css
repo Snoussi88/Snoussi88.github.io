@@ -124,10 +124,10 @@ header nav ul li {
 
 
 		.column-wrapper .column1 {
-			background-color: white;
+			background-color: black;
 			height:100%;
 			margin: 20px 10px;
-			box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+			
 
 		}
 
@@ -140,7 +140,7 @@ header nav ul li {
 		}
 
 		.column-wrapper .column2  {
-			background-color: white;
+			background-color: black;
 			height:100%;
 			margin-top: 15px;
 			box-shadow: 0 50px 50px rgba(0,0,0,0.30), 0 30px 30px rgba(0,0,0,0.22);
@@ -183,57 +183,19 @@ header nav ul li {
 			height: 560px;
 		}
 
-		.cards-grid {
-			margin-left: -24%;
-			display: grid;
-			grid-template-columns: 200px 200px 200px;
-		}
-
-		.cards-grid div {
-			margin: 10px;
-			box-shadow: 0px  19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-
-		}
-
-		.cards-grid div:hover{
-			box-shadow: 0 50px 50px rgba(0,0,0,0.25), 0 30px 30px rgba(0,0,0,0.22);
-
-		}
-
 		.cards-grid-rows {
-			background-color: transparent;
 			display: grid;
-			margin:50px 350px;
-			grid-template-rows: 200px 200px 200px;
+			grid-template-rows: 400px 400px;
 		}
 
-		.cards-grid-rows .android-card {
-			position: relative;
-			
-		}
-		
-
-		.android-card:hover .text {
-			opacity: 1;
-		}
-
-		.app-pict {
-			width: 190px;
-			height: 200px;
-			object-fit: cover;
-			object-position: bottom;
-			
-			
-		}
-
-		.android-card:hover .app-pict{
-			opacity: 0.3;
-
+		.cards-grid-columns {
+			display: grid;
+			grid-template-columns: 350px 350px 350px;
 		}
 
 		.text {
 			background-color: transparent;
-			color: black;
+			color: white;
 			font-size: 20px;
 			top: 25%;
 			left: 20%;
@@ -256,10 +218,9 @@ header nav ul li {
 		.progress .progress-bar {
 			display: block;
     		height: 100%;
-			background: linear-gradient(90deg,black 17%,grey 51%,white 68%);
+			background: linear-gradient(90deg, rgb(243, 198, 35) 51%,white 68%);
 			background-size: 300% 100%;
-			animation: progress-animation 5s linear;
-    		
+			animation: progress-animation 5s linear infinite;
 
 		}
 
@@ -286,12 +247,19 @@ header nav ul li {
 		}
 
 		.columns-bars .skill-div {
-			margin-top: 20px;
+			margin-top: 10px;
+			font-family: 'Sofia', serif;
+			font-size: 20px;
+			color: white;
 		}
 
 		.section2 .div-title {
 			text-align: center;
 			font-family: 'Franklin Gothic Medium';
+		}
+
+		.section2 .section-wrapper {
+			background-color: black;			
 		}
 
 		/* Grow Shadow */
@@ -300,18 +268,87 @@ header nav ul li {
 			vertical-align: middle;
 			-webkit-transform: perspective(1px) translateZ(0);
 			transform: perspective(1px) translateZ(0);
-			box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+			/*box-shadow: 0 0 1px rgba(0, 0, 0, 0);*/
 			-webkit-transition-duration: 0.3s;
 			transition-duration: 0.3s;
 			-webkit-transition-property: box-shadow, transform;
 			transition-property: box-shadow, transform;
   		}
   		.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
-			box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+			/*box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);*/
 			-webkit-transform: scale(1.1);
 			transform: scale(1.1);
-  		}
+		  }
+		  
+		  .card {
+			  background-color: #E5EAF5;
+			  margin: 25px;
+			  height: 550px;
+			  width: 250px;
 
+		  }
+
+		  .work-wrapper-rows{
+			  display: grid;
+			  grid-template-rows: 100px;
+
+		  }
+
+		  .work-wrapper-columns .work-pic {
+			  background-image: url(./feed.jpg);
+			  height: 800px;
+			  width: 400px;
+			  background-position: center;
+			  object-fit: cover;
+			  background-size: cover;
+			  
+			  
+		  }
+		  
+		  .work-wrapper-columns{
+			display: grid;
+			grid-template-columns: 40% 60%;
+		}
+
+		.work-wrapper-columns div {
+			margin: 30px;
+		}
+
+		.work-resume {
+			position: relative;
+		}
+
+		.work-resume:after{
+			position: absolute;
+			top:80px;
+			left: -4px;
+			width: 2px;
+			height: 34px;
+			content: '';
+			background-color: rgb(243, 198, 35);
+
+
+		}
+
+		.work-wrapper-columns .work-resume h1{
+			font-family: 'Sofia', serif;
+ 			font-weight: normal;
+			font-style: italic;
+			font-size: xx-large;
+		}
+
+		.work-wrapper-columns .work-resume p {
+			font-family: 'Inconsolata', monospace;
+			color: white;
+			font-size: large;
+		}
+
+
+
+
+		
+
+		  
 
 		
 
